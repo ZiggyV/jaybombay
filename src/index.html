@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="jay bombay, producer, itsjaybombay, music, dj, jay, bombay">
+    <meta name="author" content="Jay Bombay">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- Facebook OG -->
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Jay Bombay">
+    <meta property="og:site_name" content="Jay Bombay">
+    <meta property="og:url" content="https://jaybombay.com">
+    <meta property="og:description" content="Jay Bombay, a young belgian dj/producer based in Antwerp.">
+    <meta property="og:image" content="https://jaybombay.com/images/seo.jpg">
     <meta property="og:type" content="website">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:image" content="">
-    <meta name="twitter:image:width" content="1300">
-    <meta name="twitter:image:height" content="697">
-    <meta name="twitter:url" content="">
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#FF6347">
-    <title>Gulp boilerplate</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="twitter:domain" content="jaybombay.com">
+    <meta name="twitter:description" content="Jay Bombay, a young belgian dj/producer based in Antwerp.">
+    <meta name="twitter:title" content="Jay Bombay">
+    <meta name="twitter:image" content="https://jaybombay.com/images/seo.jpg">
+    <meta name="twitter:image:width" content="822">
+    <meta name="twitter:image:height" content="440">
+    <meta name="twitter:url" content="https://jaybombay.com">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg">
+    <title>Jay Bombay - Belgian dj/producer based in Antwerp</title>
 
     <!-- Stylesheets - Bower components will be automatically injected -->
     <!-- Switch the reset-css dependency with normalize-css (in bower.json) if your prefer a reset -->
@@ -51,35 +49,63 @@
     <div class="container">
         <section id="intro">
             <div class="wrapper">
-                <h1 class="big__heading">Gulp boilerplate</h1>
-                <p>
-                    <a href="styleguide.html" class="index__link">style guidelines</a>
-                </p>
+                <img src="images/profile.jpg" alt="Jay Bombay">
+            </div>
+        </section>
+        <section id="spotify">
+            <div class="overlay"></div>
+            <div class="wrapper wrapper--big cf">
+                <h4>Latest release<span class="line"></span></h4>
+                
+                <div class="latest">
+                    <div class="thumbnail">
+                        <img src="images/longwayhome.jpg" alt="Long way home">
+                    </div>
+                    <div class="latest__content">
+                        <h1 class="big__heading">Long way home</h1>
+                        <h3>Long way home</h3>
+                        <h3>Noah Neiman x Jay Bombay feat. Laci Kay</h3>
+                        <div class="buttons cf">
+                            <p class="button button--spotify"><a target="_blank" href="https://spoti.fi/2mSMazl">Play on Spotify</a></p>
+                            <p class="button button--soundcloud"><a target="_blank" href="https://soundcloud.com/enhanced/long-way-home">Listen on Soundcloud</a></p>                                                    
+                        </div>
+                    </div>
+                </div>    
+            </div>                      
+        </section>
+
+        <section id="social">
+            <div class="overlay"></div>
+            <div class="wrapper wrapper--big">
+                <div class="social__container cf">
+                    <div class="contact">
+                        <h4 class="contact__title">Contact</h4>
+                        <a href="mailto:info@jaybombay.com">Info@jaybombay.com</a>
+                    </div>
+                    <div class="social__icons">
+                        <p>
+                            <a target="_blank" href="https://www.facebook.com/Jay-Bombay-443333542432747">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+
+                            <a target="_blank" href="https://twitter.com/djaybombay">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+
+                            <a target="_blank" href="https://www.instagram.com/itsjaybombay/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                            <a target="_blank" href="https://soundcloud.com/jaybombay">
+                                <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="credits"><p>&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script>&nbsp;Jay Bombay - All rights reserved</p></div>
             </div>
         </section>
     </div>
-
-    <!-- External javascript files (e.g. jQuery) - automatically injected -->
-    <!-- build:js js/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- Main javascript file(s) -->
-    <!-- build:js js/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-
-    <!-- Google analytics, replace XX-XXXXXXXX-X -->		
-    <script>		
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){		
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),		
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)		
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');		
-		
-        ga('create', 'XX-XXXXXXXX-X', 'auto');		
-        ga('send', 'pageview');		
-    </script>
 </body>
 </html>

@@ -1,25 +1,215 @@
+body {
+    background-color: $main-color;    
+}
+
 .container {
-    display: table;
     width: 100%;
-    height: 100%;
-    background-color: $main-color;
 
     #intro {
-        display: table-cell;
-        vertical-align: middle;
         text-align: center;
 
-        h1 {
+        img {
+            width: 100%;
+            max-width: 600px;
+        }
+    }
+
+    #spotify {
+        background: url("../images/cover.jpg") no-repeat;
+        background-position: left center;
+        background-size: cover;
+        position: relative;
+
+        @include bp-medium {
+            background-position: center center;
+        }
+
+        .wrapper--big {
+            position: relative;
+            z-index: 10;
+        }
+
+        h4 {
             color: $white;
-            margin-bottom: 24px;
+            letter-spacing: 5px; 
+            text-transform: uppercase;
 
             @include bp-medium {
-                margin-bottom: 32px;
+                margin-left: 50%;
+            }
+
+            span {
+                width: 24px;
+                height: 2px;
+                background: $secondary-color;
+                display: inline-block;
+                margin-left: 16px;
+                margin-bottom: 5px;
             }
         }
 
-        .index__link {
-            @extend %link;
+        .latest {
+            margin-top: 24px;
+
+            .thumbnail {
+                display: none;
+
+                @include bp-medium {
+                    display: block;
+                }
+
+                img {
+                    box-shadow: 0 0 45px 0 rgba($black, .5);
+                }
+
+                @include bp-medium {
+                    width: 35%;
+                    float: left;            
+                }
+            }
+
+            .latest__content {
+                @include bp-medium {
+                    float: left;
+                    margin-left: 10%;
+                    width: 55%;
+                }
+
+                @include bp-normal {
+                    margin-left: 15%;
+                    width: 50%;
+                }
+
+                h1 {
+                    color: $secondary-color;
+                    margin-left: -4px;
+                    margin-bottom: 32px;
+                }
+
+                h3:first-of-type {
+                    color: $white;
+                }
+
+                h3 {
+                    color: darken($white, 65%);
+                    margin-bottom: 16px;
+                }
+
+                .buttons {
+                    margin-top: 40px;
+                    display: inline-block;
+
+                    @include bp-medium {
+                        margin-top: 48px;
+                    }
+
+                    .button {
+                        @include bp-small {
+                            float: left;                        
+                        }
+
+                        &:first-of-type {
+                            margin-bottom: 16px;                    
+                        }
+
+                        a {
+                            display: block;
+                            padding: 10px 15px;
+                            color: $white;
+
+                            @include bp-medium {
+                                padding: 15px 18px;
+                            }
+                        }
+                    }
+
+                    .button--soundcloud {
+                        @include bp-small {
+                            margin-left: 24px;                        
+                        }
+                    }
+                }
+            }
         }
+    }
+
+    #social {
+        background: url("../images/cover3.jpg") no-repeat center center;
+        background-size: cover;
+        position: relative;
+
+        .wrapper--big {
+            position: relative;
+            z-index: 1;
+        }
+
+        .social__container {
+            padding-bottom: 40px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid darken($white, 65%);
+            position: relative;
+
+            .contact {
+                @include bp-small {
+                    float: left;
+                }
+
+                .contact__title {
+                    font-family: $ovp-bold;
+                    color: darken($white, 65%);
+                    margin-bottom: 16px;
+                    letter-spacing: 5px; 
+                    text-transform: uppercase;
+                    @include fontsize(16px);
+                }
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            .social__icons {
+                margin-top: 40px;
+
+                @include bp-small {
+                    position: absolute;
+                    right: 0;
+                    margin-top: 0;
+                    top: 15px;
+                }
+
+                p {
+                    a {
+                        @include fontsize(32px);
+                        color: $white;
+                        margin-right: 32px; 
+
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .credits {
+            p {
+                color: darken($white, 65%);
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba($main-color, .9);
+        z-index: 1;
     }
 }

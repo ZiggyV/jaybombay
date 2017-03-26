@@ -33,10 +33,9 @@ h1 {
     }
     
     &.big__heading {
-         font-family: $ovp-light;
         @include fontsize(48px);
 
-        @include bp-medium {
+        @include bp-normal {
             @include fontsize(64px);
         }
     }
@@ -52,7 +51,7 @@ h2 {
 }
 
 h3 {
-    font-family: $ovp-regular;
+    font-family: $ovp-light;
     @include fontsize(21px);
 
     @include bp-medium {
@@ -61,11 +60,11 @@ h3 {
 }
 
 h4 {
-    font-family: $ovp-bold;
-    @include fontsize(18px);  
+    font-family: $ovp-regular;
+    @include fontsize(14px); 
     
     @include bp-medium {
-        @include fontsize(21px);
+        // @include fontsize(16px);
     }  
 }
 
@@ -89,6 +88,12 @@ p {
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
 }
 
 ul {
