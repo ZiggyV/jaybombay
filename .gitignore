@@ -4,7 +4,6 @@ bower_components/
 
 # Compiled sources #
 build/
-dist/
 .sass_cache/
 
 # Archived stuff #
